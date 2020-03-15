@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Focus Start Calculator</string>
+    <string name="enter_arithmetic_expression">Введите арифметическое выражение:</string>
+    <string name="invalid_input_alert">Вы можете использовать только цифры и символы  .  +  -  *  /  (  )</string>
+</resources>
