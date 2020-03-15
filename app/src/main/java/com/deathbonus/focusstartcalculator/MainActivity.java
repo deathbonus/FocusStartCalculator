@@ -10,10 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.deathbonus.focusstartcalculator.calculator.CalculatorInterface;
+import com.deathbonus.focusstartcalculator.calculator.Calculator;
 
 public class MainActivity extends AppCompatActivity {
-    private CalculatorInterface calculator;
+    private Calculator calculator;
     private EditText editText;
     private TextView textView;
     private boolean isInputValid;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     void init() {
         editText = findViewById(R.id.edit_text_view);
         textView = findViewById(R.id.result_text_view);
-        calculator = new CalculatorInterface();
+        calculator = new Calculator();
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

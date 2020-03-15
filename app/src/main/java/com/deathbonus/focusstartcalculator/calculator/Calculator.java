@@ -1,6 +1,6 @@
 package com.deathbonus.focusstartcalculator.calculator;
 
-public class CalculatorInterface {
+public class Calculator {
     private Stack stackOfChars;
     private Stack stackOfDoubles;
     private StringBuilder postfixExpression;
