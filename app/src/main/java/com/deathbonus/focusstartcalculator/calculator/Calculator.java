@@ -110,13 +110,13 @@ public class Calculator {
                     break;
                 case "*":
                     last = (double) stackOfDoubles.pop();
-                    previous = (double) stackOfDoubles.pop();
+                    previous = stackOfDoubles.isEmpty() ? result : (double) stackOfDoubles.pop();
                     result = previous * last;
                     stackOfDoubles.push(result);
                     break;
                 case "/":
                     last = (double) stackOfDoubles.pop();
-                    previous = (double) stackOfDoubles.pop();
+                    previous = stackOfDoubles.isEmpty() ? result : (double) stackOfDoubles.pop();
                     result = previous / last;
                     stackOfDoubles.push(result);
                     break;
